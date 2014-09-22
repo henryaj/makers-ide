@@ -41,6 +41,12 @@ describe('editor page', function() {
       expect(browser.text('textarea')).to.eql('Lorem ipsum');
     });
 
+  describe('multi-user functionality', function() {
+    it('shows the number of users online', function(){
+      expect(browser.text('h3')).to.eql('1 users online');
+    })
+  })
+  
     describe('saving changes', function() {
       before(function(done){
         browser.fill("textarea", 'Hello').
@@ -52,4 +58,7 @@ describe('editor page', function() {
       })
     });
   });
+
+
+
 });
