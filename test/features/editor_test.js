@@ -42,7 +42,7 @@ describe('editor page', function() {
     });
 
   describe('multi-user functionality', function() {
-    it('shows the number of users online', function(){
+    it('shows the number of users online when there is one user', function(){
       expect(browser.text('h3')).to.eql('1 users online');
     })
   })
