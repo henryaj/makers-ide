@@ -12,17 +12,21 @@ Once Node.js is installed (http://nodejs.org/download/), just clone the repo and
 
 To run the app:
 
-~~~
+```shell
 npm start
-~~~
+```
 
 To run the test suite:
 
-~~~
+```shell
 npm test
-~~~
+```
 
-### Technologies
+### Core technologies
 
 * Node.js
 * CoffeeScript
+* socket.io
+* Mocha
+* expect.js
+* Zombie.js
